@@ -1,10 +1,13 @@
 {
   "name": "HAMAYA-vite-2.0",
   "private": true,
+  "homepage": "https://youjenwen.github.io/HAMAYA-vite-2.0",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
@@ -48,6 +51,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.11",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-eslint": "^15.0.1",
