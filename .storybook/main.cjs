@@ -1,3 +1,4 @@
+const { mergeConfig } = require('vite');
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   "addons": [
@@ -12,15 +13,16 @@ module.exports = {
   "features": {
     "storyStoreV7": true
   },
-  webpackFinal: async (config, { configType }) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': path.resolve(__dirname, '../src'),
-      '@/Component': path.resolve(__dirname, '../src/components'),
-      '@/Styles': path.resolve(__dirname, '../src/styles'),
-      '@/Stories_modules': path.resolve(__dirname, '../src/stories/modules')
-    };
-
-    return config;
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      resolve: {
+        alias: {
+          '@': path.resolve('src'),
+          // '@/Component': path.resolve( 'src/components'),
+          // '@/Styles': path.resolve( 'src/styles'),
+          // '@/Stories_modules': path.resolve('src/stories/modules')
+        }
+      }
+    })
   }
 }

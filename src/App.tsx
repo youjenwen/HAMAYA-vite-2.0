@@ -1,5 +1,5 @@
 import '@/App.css';
-import Button from './stories/modules/button/index';
+import Button from '@/stories/modules/button';
 
 function App() {
   return (

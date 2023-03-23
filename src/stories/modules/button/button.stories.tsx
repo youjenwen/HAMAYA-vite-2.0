@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Button from './index';
+import Button from '@/stories/modules/button';
 
 //輸出給storybook 頁面顯示的
 //title -> 頁面sideBar分類
