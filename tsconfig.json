@@ -18,6 +18,8 @@
     "baseUrl": ".",
     "paths": {
       "@/Components/*": ["src/components/*"],
+      "@/Styles/*": ["src/styles/*"],
+      "@/Stories_modules/*": ["src/stories/modules/*"],
     }
   },
   "include": ["src"],
