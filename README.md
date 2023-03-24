@@ -65,3 +65,4 @@ Git Commit 需依照下方 style guide，Commit 規則可以參考 [commitlint](
     - 使用 Ant design Library，若是要更改元件樣式主題顏色/樣式，可以在 `antd.config.js` 設置，可參考[官方文件](https://github.com/ant-design/ant-design/blob/master/docs/react/customize-theme.zh-CN.md)
     
     - 盡量使用 TailwindCSS，另外在 `tailwind.config.js` 有統一規範專案使用到的色碼
+    - storybook
