@@ -1,4 +1,3 @@
-import '@/App.css';
 import Button from '@/stories/modules/button';
 
 function App() {

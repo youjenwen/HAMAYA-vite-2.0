@@ -66,4 +66,4 @@ Git Commit 需依照下方 style guide，Commit 規則可以參考 [commitlint](
     
     - 盡量使用 TailwindCSS，另外在 `tailwind.config.js` 有統一規範專案使用到的色碼
     - storybook
-    - 使用Github Pages [HAMAYA-vite-2.0](https://youjenwen.github.io/HAMAYA-vite-2.0/) (deploy.sh 為vite官方提供 版本v3文件)
+    - 使用 gh-pages, Github Pages [HAMAYA-vite-2.0](https://youjenwen.github.io/HAMAYA-vite-2.0/) (deploy.sh 為vite官方提供 版本v3文件)
