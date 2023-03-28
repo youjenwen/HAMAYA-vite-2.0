@@ -3,8 +3,8 @@ import { colorGuideline } from './color';
 export const antdTheme = {
   token: {
     borderRadius: 0,
-    colorPrimary: colorGuideline.primary.main
-    //   colorPrimaryHover: colorGuideline.primary.hover,
+    colorPrimary: colorGuideline.primary.main,
+    colorPrimaryHover: colorGuideline.primary['main-light']
     //   colorPrimaryActive: colorGuideline.primary.active,
     //   colorLink: colorGuideline.primary.default,
     //   colorLinkHover: colorGuideline.primary.hover,

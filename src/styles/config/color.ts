@@ -9,4 +9,3 @@ export const colorGuideline = {
         'gary-dark': '#333333'
     }
 }
-// module.exports = colorGuideline;
