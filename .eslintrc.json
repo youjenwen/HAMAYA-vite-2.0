@@ -1,56 +1,60 @@
 {
-    "root": true,
-    "env": {
-      "browser": true,
-      "es2021": true
-    },
-    "plugins": ["react", "react-hooks", "prettier", "jsx-a11y", "import"],
-    "extends": [
-      "airbnb",
-      "prettier",
-      "plugin:prettier/recommended",
-      "plugin:jsx-a11y/recommended",
-      "plugin:import/errors",
-      "plugin:import/warnings"
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "plugins": ["react", "react-hooks", "prettier", "jsx-a11y", "import"],
+  "ignorePatterns": [
+    "*.config.cjs",
+    "antd-theme.ts",
+    "color.ts"
+  ],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": "off",
+    "linebreak-style": "off",
+    "quotes": ["error", "single"],
+    "react/no-unescaped-entities": "off",
+    "react/no-unused-prop-types": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".tsx", ".jsx", ".js", ".ts"]
+      }
     ],
-    "overrides": [],
-    "parserOptions": {
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    },
-    "rules": {
-      "indent": "off",
-      "linebreak-style": "off",
-      "quotes": ["error", "single"],
-      "react/no-unescaped-entities": "off",
-      "react/no-unused-prop-types": "off",
-      "react/require-default-props": "off",
-      "react/prop-types": "off",
-      "react/function-component-definition": "off",
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off",
-      "react/jsx-filename-extension": [
-        "warn",
-        {
-          "extensions": [".tsx", ".jsx", ".js", ".ts"]
-        }
-      ],
-      "no-use-before-define": "off",
-      "no-underscore-dangle": "off",
-      "import/no-unresolved": "off",
-      "import/no-extraneous-dependencies": "off",
-      "import/no-named-as-default": "off",
-      "import/no-named-as-default-member": "off",
-      "import/extensions": ["error", "never"],
-      "react/jsx-props-no-spreading": "off",
-      "no-unused-vars": "warn",
-      "no-nested-ternary": "warn",
-      "no-param-reassign": "off",
-      "no-shadow": "off",
-      "no-console": "warn",
-      "jsx-a11y/click-events-have-key-events": "off",
-      "jsx-a11y/no-static-element-interactions": "off",
-      "jsx-a11y/no-noninteractive-element-interactions": "off"
-    }
+    "no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/extensions": ["error", "never"],
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-vars": "warn",
+    "no-nested-ternary": "warn",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-console": "warn",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off"
   }
-  
+}
