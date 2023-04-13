@@ -54,9 +54,10 @@ Git Commit 需依照下方 style guide，Commit 規則可以參考 [commitlint](
   |   └─ server   // API 相關設置
   |   └─ stories  // component , module
   |   └─ utils    // 共用 function
-  |
-  └─── antd.config.js  // antd 主題樣式
-  └─── tailwind.config.js  // tailwind 設定
+  |   └─ styles    // 共用 樣式
+  |     └─ config    // 共用 樣式
+  |       └─ ant-theme    //antd 主題樣式
+  └─── tailwind.config.cjs  // tailwind 設定
   ...
   ```
 
