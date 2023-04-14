@@ -3,13 +3,13 @@ import { Meta, Story } from '@storybook/react';
 import PageHeader from '.';
 
 export default {
-    title: 'Modules/PageHeader',
-    component: PageHeader
-} as Meta<typeof PageHeader>
+  title: 'Modules/PageHeader',
+  component: PageHeader
+} as Meta<typeof PageHeader>;
 
-const Template: Story<typeof PageHeader> = (args) => <PageHeader {...args} />
+const Template: Story<typeof PageHeader> = (args) => <PageHeader {...args} />;
 
 export const fill = Template.bind({});
 fill.args = {
-    color: 'primary'
-}
+  color: 'primary'
+};

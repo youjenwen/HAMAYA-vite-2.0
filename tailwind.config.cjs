@@ -10,7 +10,7 @@ const colorGuideLine = {
     'gary-light': '#767676',
     'gary-dark': '#333333'
   }
-}
+};
 
 module.exports = {
   corePlugins: {
@@ -39,4 +39,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

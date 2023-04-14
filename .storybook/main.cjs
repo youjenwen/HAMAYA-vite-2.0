@@ -24,6 +24,6 @@ module.exports = {
           // '@/Stories_modules': path.resolve('src/stories/modules')
         }
       }
-    })
+    });
   }
-}
+};

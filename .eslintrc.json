@@ -5,11 +5,7 @@
     "es2021": true
   },
   "plugins": ["react", "react-hooks", "prettier", "jsx-a11y", "import"],
-  "ignorePatterns": [
-    "*.config.cjs",
-    "antd-theme.ts",
-    "color.ts"
-  ],
+  "ignorePatterns": ["*.config.cjs", "antd-theme.ts", "color.ts"],
   "extends": [
     "airbnb",
     "prettier",

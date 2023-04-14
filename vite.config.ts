@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/HAMAYA-vite-2.0',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './src')
       // '@/component': path.resolve(__dirname, './src/components'),
       // '@/styles': path.resolve(__dirname, './src/styles'),
       // '@/stories_modules': path.resolve(__dirname, './src/stories/modules')
