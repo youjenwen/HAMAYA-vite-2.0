@@ -1,17 +1,24 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Layout, Image } from 'antd';
 const { Header: HeaderAntd } = Layout;
-
-interface HeaderProps {
-
-}
+import Menu from '@Stories_modules/menu';
+import Button from '@Stories_modules/button';
+import Logo from '@Images/logo-horizontal.svg';
+import SvgIcon from '@Stories_modules/svgIcon';
+import './pageHeader.scss';
+import { DownloadOutlined } from '@ant-design/icons';
 
 const PageHeader = () => {
-    return (
-        <HeaderAntd className="text-center text-white bg-[#7dbcea]">
-            Header here can import something setting
-        </HeaderAntd>
-
-    )
+  return (
+    <>
+      <HeaderAntd className="flex items-center justify-center gap-3 bg-primary-garyLight text-white">
+        {/* <Image className="" preview={false} src={Logo} /> */}
+        <Menu />
+        <Button className='bg-primary-garyLight' icon={<SvgIcon wrapperStyle="flex items-center justify-center" iconName="users" svgProp={{ width: 25, height: 25 }} />} />
+        <Button className='bg-primary-garyLight' icon={<SvgIcon wrapperStyle="flex items-center justify-center" iconName="shopping_cart" svgProp={{ width: 25, height: 25 }} />} />
+        <Button className='bg-primary-garyLight' icon={<SvgIcon wrapperStyle="flex items-center justify-center" iconName="logout" svgProp={{ width: 25, height: 25 }} />} />
+      </HeaderAntd>
+    </>
+  );
 };
 export default PageHeader;

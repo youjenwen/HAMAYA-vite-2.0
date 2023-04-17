@@ -1,0 +1,10 @@
+.menu--root {
+  .ant-menu-horizontal,
+  .ant-menu-light.ant-menu-horizontal > .ant-menu-submenu::after,
+  .ant-menu-light.ant-menu-horizontal > .ant-menu-item::after {
+    @apply border-none;
+  }
+}
+.ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub {
+  @apply max-h-none;
+}
