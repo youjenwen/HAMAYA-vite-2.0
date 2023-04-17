@@ -18,9 +18,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@/Components/*": ["src/components/*"],
-      "@/Styles/*": ["src/styles/*"],
-      "@/Stories_modules/*": ["src/stories/modules/*"]
+      "@Components/*": ["src/components/*"],
+      "@Styles/*": ["src/styles/*"],
+      "@Stories_modules/*": ["src/stories/modules/*"],
+      "@Images/*": ["public/images/*"]
     }
   },
   "include": ["src"],
