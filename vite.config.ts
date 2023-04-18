@@ -16,5 +16,16 @@ export default defineConfig({
       // '@Stories_components': path.resolve(__dirname, './src/stories/components'),
       '@Images': path.resolve(__dirname, './public/images')
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return id.toString().split('node_modules/')[1].split('/')[0].toString();
+          }
+        }
+      }
+    }
   }
 });
