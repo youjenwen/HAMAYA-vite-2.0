@@ -31,7 +31,6 @@ const Button = ({
   className,
   size,
   type = 'default',
-  color = 'primary',
   disabled,
   loading,
   circle,
@@ -48,7 +47,7 @@ const Button = ({
         type={type}
         size={size}
         data-testId={text}
-          className={`border-0 ${className}`}
+        className={`${className} ${icon && 'border-0'}`}
         icon={icon}
         value={value}
         disabled={disabled}
