@@ -10,8 +10,6 @@ function App() {
       }}
     >
       <div className="App">
-        <h1 className="text-main-light bg-primary-darkGreen">Hello</h1>
-        <Button type="primary" text="hello" />
         <PageHeader />
       </div>
     </ConfigProvider>

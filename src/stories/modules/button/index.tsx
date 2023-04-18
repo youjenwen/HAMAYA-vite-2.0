@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './button.scss';
 import { Button as ButtonAnt } from 'antd';
 import { SizeType } from 'antd/lib/config-provider/SizeContext';
 import PropTypes from 'prop-types';
@@ -13,6 +13,7 @@ export interface ButtonProps {
   htmlType?: 'button';
   size?: SizeType;
   color?: 'primary' | 'secondary' | 'tertiary' | 'danger';
+  icon?: React.ReactNode;
   text?: string | JSX.Element;
   disabled?: boolean;
   loading?: boolean;
@@ -25,6 +26,7 @@ export interface ButtonProps {
 }
 
 const Button = ({
+  icon,
   text = '',
   className,
   size,
@@ -41,21 +43,24 @@ const Button = ({
   onBlur
 }: ButtonProps) => {
   return (
-    <ButtonAnt
-      type={type}
-      size={size}
-      data-testid={text}
-      //   className={`button--root button--${color} ${disabled ? 'disabled' : ''} ${className}`}
-      value={value}
-      disabled={disabled}
-      onClick={onClick}
-      htmlType={htmlType}
-      shape={circle ? 'circle' : 'default'}
-      onBlur={onBlur}
-      loading={loading}
-    >
-      {text}
-    </ButtonAnt>
+    <div className="button--root">
+      <ButtonAnt
+        type={type}
+        size={size}
+        data-testId={text}
+          className={`border-0 ${className}`}
+        icon={icon}
+        value={value}
+        disabled={disabled}
+        onClick={onClick}
+        htmlType={htmlType}
+        shape={circle ? 'circle' : 'default'}
+        onBlur={onBlur}
+        loading={loading}
+      >
+        {text}
+      </ButtonAnt>
+    </div>
   );
 };
 
