@@ -28,7 +28,7 @@ module.exports = {
       colors: {
         primary: {
           darkGreen: colorGuideLine.primary.main,
-          gary: colorGuideLine.primary['main-gary'],
+          gary: colorGuideLine.primary['main-light'],
           garyLight: colorGuideLine.primary['main-gary-light'],
           brown: colorGuideLine.primary.accent,
           beige: colorGuideLine.primary['accent-light'],
@@ -37,6 +37,17 @@ module.exports = {
         }
       },
     },
+    fontSize: {
+      heading_1: '4rem',
+      heading_2: '3rem',
+      heading_3: '2rem',
+      heading_4: '1.5rem',
+      heading_5: '1.25rem',
+      heading_6: '1.15rem',
+      paragraph: '1rem',
+      small: '0.85rem',
+      minimum: '0.75rem'
+    }
   },
   plugins: [],
 };
