@@ -3,6 +3,7 @@ import Button from '@/stories/modules/button';
 import { antdTheme } from '@/styles/config/ant-theme';
 import PageHeader from '@/stories/modules/pageHeader';
 import PageFooter from './stories/modules/pageFooter';
+import PDFViewer from './PDFViewer';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       }}
     >
       <div className="App">
-        <PageHeader />
-        <PageFooter />
+        {/* <PageHeader /> */}
+        <PDFViewer />
+        {/* <PageFooter /> */}
       </div>
     </ConfigProvider>
   );
