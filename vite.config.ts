@@ -5,7 +5,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), viteSvgr()],
+  plugins: [react(), viteSvgr({ include: '**/*.svg' })],
   base: '/HAMAYA-vite-2.0',
   resolve: {
     alias: {
@@ -14,7 +14,7 @@ export default defineConfig({
       '@Styles': path.resolve(__dirname, './src/styles'),
       '@Stories_modules': path.resolve(__dirname, './src/stories/modules'),
       // '@Stories_components': path.resolve(__dirname, './src/stories/components'),
-      '@Images': path.resolve(__dirname, './public/images')
+      '@Images': path.resolve(__dirname, './src/stories/assets')
     }
   },
   build: {
