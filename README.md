@@ -5,7 +5,8 @@
 這是一個之前資策會小組專題的升級版。  
 給自己在正式上班後，用學到的技術做一個大挑戰，不知道何時完成先立flag :triangular_flag_on_post:  
 希望今年可以完成!今天(2023/3/17)  
-
+[HAMAYA MUSIC 2.0](https://youjenwen.github.io/HAMAYA-vite-2.0/)
+使用Github Pages
 
 ### 專案指令
 nodejs 版本 `19.1.0`  
