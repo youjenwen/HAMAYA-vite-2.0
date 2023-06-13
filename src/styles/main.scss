@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
- /* 中文字體 */
+/* 中文字體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Noto Sans TC', sans-serif; */
 /*  英文字體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap');
- /* font-family: 'Noto Serif Display', serif; */
+/* font-family: 'Noto Serif Display', serif; */
+
+:root::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   padding: 0;

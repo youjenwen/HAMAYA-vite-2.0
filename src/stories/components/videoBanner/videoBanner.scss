@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.--videoBanner {
+  .--title {
+    font-family: 'Prata', serif;
+    animation: outer-left 1s 1s ease both;
+    .title-inner {
+      display: inline-block;
+      animation: inner-left 1s 1s ease both;
+    }
+
+    .cafe {
+      animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+      letter-spacing: 10px;
+    }
+    .mozart {
+      @extend.cafe;
+      display: inline-block;
+    }
+    .cafe-inner {
+      display: inline-block;
+      animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+      letter-spacing: 30px;
+    }
+    .mozart-inner {
+      animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+      letter-spacing: 30px;
+    }
+    .font5 {
+      @apply relative bottom-[-5rem] right-[2rem] text-[2vmin];
+    }
+  }
+  .home-video {
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+    @keyframes image-in {
+      from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+
+      to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+}
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4,
+.noot-5 {
+  position: absolute;
+  animation: notes 5s infinite linear;
+
+  opacity: 0;
+}
+
+.noot-1 {
+  bottom: 630px;
+  left: 3%;
+  animation-delay: 7s;
+}
+
+.noot-2 {
+  bottom: 100px;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.noot-3 {
+  bottom: 300px;
+  left: 45%;
+
+  animation-delay: 3s;
+}
+
+.noot-4 {
+  bottom: 500px;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.noot-5 {
+  top: 90px;
+  left: 70%;
+  animation-delay: 6s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
