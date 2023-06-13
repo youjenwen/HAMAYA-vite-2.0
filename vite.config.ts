@@ -13,6 +13,7 @@ export default defineConfig({
       '@Component': path.resolve(__dirname, './src/components'),
       '@Styles': path.resolve(__dirname, './src/styles'),
       '@Stories_modules': path.resolve(__dirname, './src/stories/modules'),
+      '@Stories_assets': path.resolve(__dirname, './src/stories/assets'),
       // '@Stories_components': path.resolve(__dirname, './src/stories/components'),
       '@Images': path.resolve(__dirname, './src/stories/assets')
     }

@@ -21,6 +21,7 @@
       "@Components/*": ["src/components/*"],
       "@Styles/*": ["src/styles/*"],
       "@Stories_modules/*": ["src/stories/modules/*"],
+      "@Stories_assets/*": ["src/stories/assets/*"],
       "@Images/*": ["public/images/*"]
     }
   },
