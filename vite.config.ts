@@ -10,12 +10,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@Component': path.resolve(__dirname, './src/components'),
+      '@Components': path.resolve(__dirname, './src/components'),
+      '@Pages': path.resolve(__dirname, './src/pages'),
       '@Styles': path.resolve(__dirname, './src/styles'),
       '@Stories_modules': path.resolve(__dirname, './src/stories/modules'),
-      '@Stories_assets': path.resolve(__dirname, './src/stories/assets'),
-      // '@Stories_components': path.resolve(__dirname, './src/stories/components'),
-      '@Images': path.resolve(__dirname, './src/stories/assets')
+      '@Stories_components': path.resolve(__dirname, './src/stories/components'),
+      '@Images': path.resolve(__dirname, './src/stories/assets'),
+      '@Utils': path.resolve(__dirname, './src/utils')
     }
   },
   build: {

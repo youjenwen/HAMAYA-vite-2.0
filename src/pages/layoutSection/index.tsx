@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePage from '@/page/homePage';
+import HomePage from '@Pages/homePage';
 
 const LayoutSection = () => {
   return (

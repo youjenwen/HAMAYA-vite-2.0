@@ -1,4 +1,4 @@
-import VideoBanner from '@/stories/components/videoBanner';
+import VideoBanner from '@Stories_components/videoBanner';
 import React from 'react';
 
 const HomePage = () => {

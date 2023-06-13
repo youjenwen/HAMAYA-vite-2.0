@@ -1,6 +1,6 @@
 import { ConfigProvider } from 'antd';
-import { antdTheme } from '@/styles/config/ant-theme';
-import PageLayout from '@/page';
+import { antdTheme } from '@Styles/config/ant-theme';
+import PageLayout from '@Pages/index';
 
 function App() {
   return (

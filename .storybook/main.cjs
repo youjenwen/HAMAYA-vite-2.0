@@ -17,11 +17,13 @@ module.exports = {
       resolve: {
         alias: {
           '@': path.resolve('src'),
-          '@Component': path.resolve(__dirname, './src/components'),
+          '@Components': path.resolve(__dirname, './src/components'),
+          '@Pages': path.resolve(__dirname, './src/pages'),
           '@Styles': path.resolve(__dirname, './src/styles'),
           '@Stories_modules': path.resolve(__dirname, './src/stories/modules'),
-          // '@Stories_components': path.resolve(__dirname, './src/stories/components'),
-          '@Images': path.resolve(__dirname, './public/images')
+          '@Stories_components': path.resolve(__dirname, './src/stories/components'),
+          '@Images': path.resolve(__dirname, './src/stories/assets'),
+          '@Utils': path.resolve(__dirname, './src/utils')
         }
       }
     });

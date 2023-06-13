@@ -19,13 +19,15 @@
     "paths": {
       "@/*": ["src/*"],
       "@Components/*": ["src/components/*"],
+      "@Pages/*": ["src/pages/*"],
       "@Styles/*": ["src/styles/*"],
       "@Stories_modules/*": ["src/stories/modules/*"],
-      "@Stories_assets/*": ["src/stories/assets/*"],
-      "@Images/*": ["public/images/*"]
+      "@Stories_components/*": ["src/stories/components/*"],
+      "@Images/*": ["src/stories/assets/*"],
+      "@Utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"],
-  "exclude": ["**/*.test.ts","**/*.cy.ts","**/*.test.tsx","**/*.cy.tsx"],
+  "exclude": ["**/*.test.ts", "**/*.cy.ts", "**/*.test.tsx", "**/*.cy.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

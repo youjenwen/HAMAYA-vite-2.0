@@ -1,7 +1,7 @@
 import React from 'react';
-import PageHeader from '@/stories/modules/pageHeader';
-import PageFooter from '@/stories/modules/pageFooter';
-import LayoutSection from '@/page/layoutSection';
+import PageHeader from '@Stories_modules/pageHeader';
+import PageFooter from '@Stories_modules/pageFooter';
+import LayoutSection from '@Pages/layoutSection';
 
 const PageLayout = () => {
   return (

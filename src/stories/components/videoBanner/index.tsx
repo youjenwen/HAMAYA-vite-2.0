@@ -1,11 +1,11 @@
 import React from 'react';
 import './videoBanner.scss';
-import homeVideo from '@Stories_assets/home-video.mp4';
-import Note1 from '@Stories_assets/note-1.svg';
-import Note2 from '@Stories_assets/note-2.svg';
-import Note3 from '@Stories_assets/note-3.svg';
-import Note4 from '@Stories_assets/note-4.svg';
-import Note5 from '@Stories_assets/note-5.svg';
+import homeVideo from '@Images/home-video.mp4';
+import Note1 from '@Images/note-1.svg';
+import Note2 from '@Images/note-2.svg';
+import Note3 from '@Images/note-3.svg';
+import Note4 from '@Images/note-4.svg';
+import Note5 from '@Images/note-5.svg';
 
 const VideoBanner = () => {
   return (

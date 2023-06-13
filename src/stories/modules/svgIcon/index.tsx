@@ -1,4 +1,4 @@
-import { useDynamicSvgImport } from '@/utils/svgIcon/useDynamicSvgImport';
+import { useDynamicSvgImport } from '@Utils/svgIcon/useDynamicSvgImport';
 import React from 'react';
 
 interface IProps {
