@@ -47,6 +47,10 @@ module.exports = {
       paragraph: '1rem',
       small: '0.85rem',
       minimum: '0.75rem'
+    },
+    fontFamily: {
+      "Noto_Serif_Display": ['"Noto Serif Display"', 'serif'],
+      'Prata': ['"Prata"', 'serif']
     }
   },
   plugins: [],

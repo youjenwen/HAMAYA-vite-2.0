@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-
 @keyframes text-clip {
   from {
     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
@@ -32,32 +30,23 @@
 
 .--videoBanner {
   .--title {
-    font-family: 'Prata', serif;
     animation: outer-left 1s 1s ease both;
     .title-inner {
-      display: inline-block;
       animation: inner-left 1s 1s ease both;
     }
 
-    .cafe {
+    .cafe,
+    .mozart {
       animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
       letter-spacing: 10px;
     }
-    .mozart {
-      @extend.cafe;
-      display: inline-block;
-    }
     .cafe-inner {
-      display: inline-block;
       animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
       letter-spacing: 30px;
     }
     .mozart-inner {
       animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
       letter-spacing: 30px;
-    }
-    .font5 {
-      @apply relative bottom-[-5rem] right-[2rem] text-[2vmin];
     }
   }
   .home-video {
