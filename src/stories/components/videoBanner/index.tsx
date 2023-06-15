@@ -11,13 +11,13 @@ const VideoBanner = () => {
   return (
     <>
       <div className="--videoBanner z-[100] grid h-screen grid-cols-[2fr,3fr] items-center bg-primary-garyLight pb-4 text-primary-darkGreen  max-md:h-[40vh]">
-        <div className="--title z-[2] col-span-full row-start-1 row-end-auto mb-12 w-full pl-[1.5em] text-[15vmin] max-md:relative max-md:bottom-[-0.5rem] max-md:right-4 max-md:pl-[1em] max-md:pt-10 max-md:text-center max-md:text-[10vmin]">
+        <div className="--title font-Prata z-[2] col-span-full row-start-1 row-end-auto mb-12 w-full pl-[1.5em] text-[15vmin] max-md:relative max-md:bottom-[-0.5rem] max-md:right-4 max-md:pl-[1em] max-md:pt-10 max-md:text-center max-md:text-[10vmin]">
           <div className="title-inner">
             <div className="cafe">
-              <div className="cafe-inner ">HAMAYA</div>
+              <div className="cafe-inner">HAMAYA</div>
             </div>
             <div className="mozart">
-              <div className="mozart-inner ">MUSIC</div>
+              <div className="mozart-inner">MUSIC</div>
             </div>
             <div className="relative bottom-[-5rem] right-[2rem] text-[2vmin] max-md:bottom-[-0.5rem] max-md:right-4 max-md:text-center max-md:text-paragraph max-md:font-bold">
               <span className="">

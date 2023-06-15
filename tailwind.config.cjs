@@ -33,7 +33,8 @@ module.exports = {
           brown: colorGuideLine.primary.accent,
           beige: colorGuideLine.primary['accent-light'],
           darkGary: colorGuideLine.primary['gary-light'],
-          iron: colorGuideLine.primary['gary-dark']
+          iron: colorGuideLine.primary['gary-dark'],
+          parallax: '#f0f8ff',
         }
       },
     },
@@ -47,6 +48,10 @@ module.exports = {
       paragraph: '1rem',
       small: '0.85rem',
       minimum: '0.75rem'
+    },
+    fontFamily: {
+      "Noto_Serif_Display": ['"Noto Serif Display"', 'serif'],
+      'Prata': ['"Prata"', 'serif']
     }
   },
   plugins: [],

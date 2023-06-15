@@ -9,14 +9,19 @@ export default defineConfig({
   base: '/HAMAYA-vite-2.0',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
       '@Components': path.resolve(__dirname, './src/components'),
+      '@Hook': path.resolve(__dirname, './src/hook'),
+      '@Interface': path.resolve(__dirname, './src/interface'),
       '@Pages': path.resolve(__dirname, './src/pages'),
+      '@Redux': path.resolve(__dirname, './src/redux'),
+      '@Redux_slice': path.resolve(__dirname, './src/redux/slice'),
+      '@Redux_saga': path.resolve(__dirname, './src/redux/saga'),
       '@Styles': path.resolve(__dirname, './src/styles'),
       '@Stories_modules': path.resolve(__dirname, './src/stories/modules'),
       '@Stories_components': path.resolve(__dirname, './src/stories/components'),
       '@Images': path.resolve(__dirname, './src/stories/assets'),
-      '@Utils': path.resolve(__dirname, './src/utils')
+      '@Utils': path.resolve(__dirname, './src/utils'),
+      '@': path.resolve(__dirname, './src')
     }
   },
   build: {
