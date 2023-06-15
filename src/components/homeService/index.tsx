@@ -42,12 +42,7 @@ const ServiceSection = ({
                   <span className="absolute left-[20%] top-2 text-heading_4 text-primary-darkGreen">
                     {zhTitle}
                   </span>
-                  <img
-                    src={slash}
-                    width="150"
-                    alt="Slash"
-                    className="absolute left-[20%] top-5"
-                  />
+                  <img src={slash} width="150" alt="Slash" className="absolute left-[20%] top-5" />
                   <span className="absolute left-[30%] top-14  whitespace-nowrap text-heading_4 text-primary-beige">
                     {enTitle}
                   </span>
@@ -66,7 +61,7 @@ const ServiceSection = ({
 
 const HomeService = () => {
   return (
-    <div className="bg-primary-garyLight">
+    <>
       <div className="container mx-auto flex items-center justify-center gap-3">
         <p className="cursor-pointer whitespace-nowrap text-heading_4 font-bold text-primary-darkGreen ">
           服務項目
@@ -79,7 +74,7 @@ const HomeService = () => {
       <ServiceSection zhTitle="樂器商城" enTitle="Instrumental Store" direction={true} />
       <ServiceSection zhTitle="音樂教育" enTitle="Musical Education" direction={false} />
       <ServiceSection zhTitle="場地租借" enTitle="Facility Rental Services" direction={true} />
-    </div>
+    </>
   );
 };
 

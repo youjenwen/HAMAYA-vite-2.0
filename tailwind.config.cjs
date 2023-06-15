@@ -33,7 +33,8 @@ module.exports = {
           brown: colorGuideLine.primary.accent,
           beige: colorGuideLine.primary['accent-light'],
           darkGary: colorGuideLine.primary['gary-light'],
-          iron: colorGuideLine.primary['gary-dark']
+          iron: colorGuideLine.primary['gary-dark'],
+          parallax: '#f0f8ff',
         }
       },
     },
