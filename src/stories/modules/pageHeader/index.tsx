@@ -1,17 +1,21 @@
 import React from 'react';
 import { Layout, Image } from 'antd';
-const { Header: HeaderAntd } = Layout;
+import { Link } from 'react-router-dom';
 import Menu from '@Stories_modules/menu';
 import Button from '@Stories_modules/button';
 import SvgIcon from '@Stories_modules/svgIcon';
 import Logo from '@Images/logo-white.svg';
 import './pageHeader.scss';
 
+const { Header: HeaderAntd } = Layout;
+
 const PageHeader = () => {
   return (
     <>
       <HeaderAntd className="flex items-center justify-center gap-3 bg-primary-garyLight text-white">
-        <Image className="" preview={false} src={Logo} />
+        <Link to="/">
+          <Image className="" preview={false} src={Logo} />
+        </Link>
         <Menu />
         <Button
           className="bg-primary-garyLight"

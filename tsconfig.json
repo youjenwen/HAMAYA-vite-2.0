@@ -24,6 +24,7 @@
       "@Redux/*": ["src/redux/*"],
       "@Redux_slice/*": ["src/redux/slice/*"],
       "@Redux_saga/*": ["src/redux/saga/*"],
+      "@Router/*": ["src/router/*"],
       "@Styles/*": ["src/styles/*"],
       "@Stories_modules/*": ["src/stories/modules/*"],
       "@Stories_components/*": ["src/stories/components/*"],

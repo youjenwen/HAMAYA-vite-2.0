@@ -1,16 +1,17 @@
 import React from 'react';
+import { Layout as AntdLayout } from 'antd';
+import { Outlet } from 'react-router-dom';
 import PageHeader from '@Stories_modules/pageHeader';
 import PageFooter from '@Stories_modules/pageFooter';
-import LayoutSection from '@Pages/layoutSection';
 
-const PageLayout = () => {
+const Layout = () => {
   return (
-    <>
+    <AntdLayout>
       <PageHeader />
-      <LayoutSection />
+      <Outlet />
       <PageFooter />
-    </>
+    </AntdLayout>
   );
 };
 
-export default PageLayout;
+export default Layout;

@@ -16,6 +16,7 @@ export default defineConfig({
       '@Redux': path.resolve(__dirname, './src/redux'),
       '@Redux_slice': path.resolve(__dirname, './src/redux/slice'),
       '@Redux_saga': path.resolve(__dirname, './src/redux/saga'),
+      '@Router': path.resolve(__dirname, './src/router'),
       '@Styles': path.resolve(__dirname, './src/styles'),
       '@Stories_modules': path.resolve(__dirname, './src/stories/modules'),
       '@Stories_components': path.resolve(__dirname, './src/stories/components'),
