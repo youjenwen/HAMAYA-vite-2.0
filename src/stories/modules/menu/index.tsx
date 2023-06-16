@@ -2,6 +2,7 @@ import React from 'react';
 import './menu.scss';
 import { Menu as MenuAntd } from 'antd';
 import type { MenuProps as MenuPropsAntd } from 'antd';
+import { Link } from 'react-router-dom';
 
 const item: MenuPropsAntd['items'] = [
   {
@@ -12,11 +13,11 @@ const item: MenuPropsAntd['items'] = [
         type: 'group',
         children: [
           {
-            label: '促銷活動',
+            label: <Link to="/news">促銷活動</Link>,
             key: 'news:1'
           },
           {
-            label: '活動快訊',
+            label: <Link to="/news">活動快訊</Link>,
             key: 'news:2'
           },
           {
@@ -108,7 +109,6 @@ const item: MenuPropsAntd['items'] = [
     key: 'about_us'
   }
 ];
-
 
 interface MenuAntdProps {
   mode?: 'vertical' | 'horizontal' | 'inline';

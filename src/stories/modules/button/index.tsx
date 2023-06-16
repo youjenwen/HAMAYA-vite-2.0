@@ -46,7 +46,7 @@ const Button = ({
       <ButtonAnt
         type={type}
         size={size}
-        data-testId={text}
+        data-testid={text}
         className={`${className} ${icon && 'border-0'}`}
         icon={icon}
         value={value}

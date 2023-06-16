@@ -1,18 +1,18 @@
 import { ConfigProvider } from 'antd';
 import { antdTheme } from '@Styles/config/ant-theme';
-import PageLayout from '@Pages/index';
+import { Provider } from 'react-redux';
+import { store } from '@Redux/configureStore';
+import allRouters from './router';
+import {  useRoutes } from 'react-router-dom';
 
 function App() {
+  const element = useRoutes(allRouters);
   return (
-    <ConfigProvider
-      theme={{
-        ...antdTheme
-      }}
-    >
-      <div className="App">
-        <PageLayout />
-      </div>
-    </ConfigProvider>
+    <>
+      <Provider store={store}>
+        <ConfigProvider theme={antdTheme}>{element}</ConfigProvider>
+      </Provider>
+    </>
   );
 }
 
