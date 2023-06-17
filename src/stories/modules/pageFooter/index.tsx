@@ -23,9 +23,9 @@ const PageFooter = () => {
               <p className="max-md:text-[.5rem]">MON.-FRI. 09:00-12:00 / 13:00-18:00</p>
             </div>
           </div>
-          <div className="flex gap-4 text-primary-garyLight">
+          <div className="flex max-md:gap-2 md:gap-4 text-primary-garyLight">
             <div className="text-center">
-              <h6>最新消息</h6>
+              <h6 className='max-md:text-paragraph'>最新消息</h6>
               <div className="max-md:hidden">
                 <Button className="text-small text-primary-garyLight" type="link" text="促銷活動" />
                 <Button className="text-small text-primary-garyLight" type="link" text="活動快訊" />
@@ -34,13 +34,13 @@ const PageFooter = () => {
               </div>
             </div>
             <div className="text-center">
-              <h6>樂器商城</h6>
+              <h6 className='max-md:text-paragraph'>樂器商城</h6>
               <div className="max-md:hidden">
                 <Button className="text-small text-primary-garyLight" type="link" text="最新商品" />
               </div>
             </div>
             <div className="text-center">
-              <h6>音樂教育</h6>
+              <h6 className='max-md:text-paragraph'>音樂教育</h6>
               <div className="max-md:hidden">
                 <Button className="text-small text-primary-garyLight" type="link" text="成人課程" />
                 <Button className="text-small text-primary-garyLight" type="link" text="兒童課程" />
@@ -48,10 +48,10 @@ const PageFooter = () => {
               </div>
             </div>
             <div className="text-center">
-              <h6>場地租借</h6>
+              <h6 className='max-md:text-paragraph'>場地租借</h6>
             </div>
             <div className="text-center">
-              <h6>關於我們</h6>
+              <h6 className='max-md:text-paragraph'>關於我們</h6>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -64,7 +64,7 @@ const PageFooter = () => {
           </div>
         </div>
         <div>
-          <Image preview={false} src={line} />
+          <Image width='100%' preview={false} src={line} />
         </div>
       </FooterAntd>
     </div>
