@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import articlePhoto from '@Images/logo.svg';
 import { useAppDispatch, useAppSelector } from '@Hook/useAppRedux';
+import { Image } from 'antd';
 
 const ArticleSection = () => {
   const { homeArticle } = useAppSelector((state) => state.home);
@@ -22,7 +23,7 @@ const ArticleSection = () => {
 
   return (
     <>
-      <div className="container mx-auto flex items-center justify-center gap-3 py-5">
+      <div className="container mx-auto max-sm:px-3 flex items-center justify-center gap-3 py-5">
         <p className="cursor-pointer whitespace-nowrap text-heading_4 font-bold text-primary-darkGreen ">
           音樂文章
         </p>
@@ -31,7 +32,7 @@ const ArticleSection = () => {
         </p>
         <div className="h-[3px] w-full bg-primary-gary"></div>
       </div>
-      <div className="container mx-auto bg-primary-garyLight">
+      <div className="container mx-auto max-sm:px-3 bg-primary-garyLight">
         <div className="grid grid-cols-12 pt-[35px]">
           {homeArticle.map((article, index) => {
             return (
@@ -40,11 +41,11 @@ const ArticleSection = () => {
                   {/* <Link to={`/news/${article.id}?mainId=${article.category}`}> */}
                   {/* TODO: 待處理BE回傳的照片檔名 require(`../../assets/${article.image}`) */}
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
+                      preview={false}
                       src={articlePhoto}
                       key={`${article.image}_${index}`}
                       alt="art"
-                      className="h-[280px] w-full object-contain"
                     />
                   </div>
 
@@ -52,7 +53,7 @@ const ArticleSection = () => {
                     <div className="m-2">{article.title}</div>
                     <div className="m-2 flex items-center gap-1">
                       <div className="flex h-[25px] items-center justify-center bg-primary-gary text-small leading-6 text-primary-beige">
-                        <p>{article.articleName}</p>
+                        <p className="p-1">{article.articleName}</p>
                       </div>
                       <p>
                         {article.author}－{article.creation_date}
