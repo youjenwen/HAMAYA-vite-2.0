@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from 'antd';
 import './videoBanner.scss';
 import homeVideo from '@Images/home-video.mp4';
 import Note1 from '@Images/note-1.svg';
@@ -10,8 +11,8 @@ import Note5 from '@Images/note-5.svg';
 const VideoBanner = () => {
   return (
     <>
-      <div className="--videoBanner z-[100] grid h-screen grid-cols-[2fr,3fr] items-center bg-primary-garyLight pb-4 text-primary-darkGreen  max-md:h-[40vh]">
-        <div className="--title font-Prata z-[2] col-span-full row-start-1 row-end-auto mb-12 w-full pl-[1.5em] text-[15vmin] max-md:relative max-md:bottom-[-0.5rem] max-md:right-4 max-md:pl-[1em] max-md:pt-10 max-md:text-center max-md:text-[10vmin]">
+      <div className="--videoBanner z-20 grid h-screen grid-cols-[2fr,3fr] items-center bg-primary-garyLight pb-4 text-primary-darkGreen  max-md:h-[40vh]">
+        <div className="--title z-[2] col-span-full row-start-1 row-end-auto mb-12 w-full pl-[1.5em] font-Prata text-[15vmin] max-md:relative max-md:bottom-[-0.5rem] max-md:right-4 max-md:pl-[1em] max-md:pt-10 max-md:text-center max-md:text-[10vmin]">
           <div className="title-inner">
             <div className="cafe">
               <div className="cafe-inner">HAMAYA</div>
@@ -38,37 +39,37 @@ const VideoBanner = () => {
         </div>
         <div className="hidden max-md:block">
           <div className="noot-1">
-            <img src={Note1} alt="" />
+            <Image preview={false} src={Note1} alt="" />
           </div>
           <div className="noot-2">
-            <img src={Note2} alt="" />
+            <Image preview={false} src={Note2} alt="" />
           </div>
           <div className="noot-3">
-            <img src={Note3} alt="" />
+            <Image preview={false} src={Note3} alt="" />
           </div>
           <div className="noot-4">
-            <img src={Note4} alt="" />
+            <Image preview={false} src={Note4} alt="" />
           </div>
           <div className="noot-5">
-            <img src={Note5} alt="" width="30" />
+            <Image preview={false} src={Note5} alt="" width="30" />
           </div>
         </div>
       </div>
       <div className="max-md:hidden">
         <div className="noot-1">
-          <img src={Note1} alt="" width="15" />
+          <Image preview={false} src={Note1} alt="" width="15" />
         </div>
         <div className="noot-2">
-          <img src={Note2} alt="" width="15" />
+          <Image preview={false} src={Note2} alt="" width="15" />
         </div>
         <div className="noot-3">
-          <img src={Note3} alt="" width="15" />
+          <Image preview={false} src={Note3} alt="" width="15" />
         </div>
         <div className="noot-4">
-          <img src={Note4} alt="" width="15" />
+          <Image preview={false} src={Note4} alt="" width="15" />
         </div>
         <div className="noot-5">
-          <img src={Note5} alt="" width="15" />
+          <Image preview={false} src={Note5} alt="" width="15" />
         </div>
       </div>
     </>
