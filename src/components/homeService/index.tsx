@@ -81,7 +81,7 @@ const ServiceSection = ({
 const HomeService = () => {
   return (
     <>
-      <div className="container mx-auto flex items-center justify-center gap-3">
+      <div className="container mx-auto max-sm:px-3 flex items-center justify-center gap-3">
         <p className="cursor-pointer whitespace-nowrap text-heading_4 font-bold text-primary-darkGreen ">
           服務項目
         </p>
