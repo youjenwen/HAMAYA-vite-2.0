@@ -118,7 +118,7 @@ interface MenuAntdProps {
 const Menu = ({ mode = 'horizontal' }: MenuAntdProps) => {
   return (
     <div className="menu--root w-1/2">
-      <MenuAntd className="justify-center bg-primary-garyLight" mode={mode} items={item} />
+      <MenuAntd className=" justify-center gap-8 bg-primary-garyLight text-heading_4 max-md:text-heading_5 text-primary-darkGreen font-bold" mode={mode} items={item} />
     </div>
   );
 };

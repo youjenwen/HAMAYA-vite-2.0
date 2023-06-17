@@ -12,9 +12,9 @@ const { Header: HeaderAntd } = Layout;
 const PageHeader = () => {
   return (
     <>
-      <HeaderAntd className="flex items-center justify-center gap-3 bg-primary-garyLight text-white">
+      <HeaderAntd className="sticky top-0 z-30 flex max-md:h-[90px] h-[130px] items-center justify-center gap-3 bg-primary-garyLight text-white shadow-2xl">
         <Link to="/">
-          <Image className="" preview={false} src={Logo} />
+          <Image preview={false} src={Logo} />
         </Link>
         <Menu />
         <Button

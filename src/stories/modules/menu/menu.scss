@@ -4,7 +4,17 @@
   .ant-menu-light.ant-menu-horizontal > .ant-menu-item::after {
     @apply border-none;
   }
+  .ant-menu::before,
+  .ant-menu-horizontal::after {
+    @apply content-none;
+  }
 }
 .ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub {
   @apply max-h-none;
+  .ant-menu-title-content {
+    @apply text-heading_6 max-md:text-paragraph font-bold text-primary-beige;
+  }
+}
+.ant-menu-light.ant-menu-submenu > .ant-menu {
+  @apply bg-primary-gary;
 }
