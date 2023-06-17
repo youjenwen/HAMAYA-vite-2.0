@@ -11,35 +11,41 @@ const PageFooter = () => {
   return (
     <div className="footer--root">
       <FooterAntd className="bg-primary-gary px-0">
-        <div className="flex justify-center w-full gap-4 px-4">
+        <div className="flex w-full justify-center gap-4 px-4 max-md:flex-wrap">
           <div className="flex flex-col gap-4">
             <div className="flex items-end gap-4">
               <Image preview={false} src={footer_hamaya} />
               <Image className="text-end" preview={false} src={footer_music} />
             </div>
-            <div className="p-0 text-primary-garyLight">
-              <p>TEL: 06-6946-5820/ FAX: 06-7635-8075</p>
-              <p>MAIL: service@gmail.com</p>
-              <p>MON.-FRI. 09:00-12:00 / 13:00-18:00</p>
+            <div className="p-0 text-primary-garyLight max-md:hidden">
+              <p className="max-md:text-[.5rem]">TEL: 06-6946-5820/ FAX: 06-7635-8075</p>
+              <p className="max-md:text-[.5rem]">MAIL: service@gmail.com</p>
+              <p className="max-md:text-[.5rem]">MON.-FRI. 09:00-12:00 / 13:00-18:00</p>
             </div>
           </div>
           <div className="flex gap-4 text-primary-garyLight">
             <div className="text-center">
               <h6>最新消息</h6>
-              <Button className="text-small text-primary-garyLight" type="link" text="促銷活動" />
-              <Button className="text-small text-primary-garyLight" type="link" text="活動快訊" />
-              <Button className="text-small text-primary-garyLight" type="link" text="重要通知" />
-              <Button className="text-small text-primary-garyLight" type="link" text="音樂文章" />
+              <div className="max-md:hidden">
+                <Button className="text-small text-primary-garyLight" type="link" text="促銷活動" />
+                <Button className="text-small text-primary-garyLight" type="link" text="活動快訊" />
+                <Button className="text-small text-primary-garyLight" type="link" text="重要通知" />
+                <Button className="text-small text-primary-garyLight" type="link" text="音樂文章" />
+              </div>
             </div>
             <div className="text-center">
               <h6>樂器商城</h6>
-              <Button className="text-small text-primary-garyLight" type="link" text="最新商品" />
+              <div className="max-md:hidden">
+                <Button className="text-small text-primary-garyLight" type="link" text="最新商品" />
+              </div>
             </div>
             <div className="text-center">
               <h6>音樂教育</h6>
-              <Button className="text-small text-primary-garyLight" type="link" text="成人課程" />
-              <Button className="text-small text-primary-garyLight" type="link" text="兒童課程" />
-              <Button className="text-small text-primary-garyLight" type="link" text="師資介紹" />
+              <div className="max-md:hidden">
+                <Button className="text-small text-primary-garyLight" type="link" text="成人課程" />
+                <Button className="text-small text-primary-garyLight" type="link" text="兒童課程" />
+                <Button className="text-small text-primary-garyLight" type="link" text="師資介紹" />
+              </div>
             </div>
             <div className="text-center">
               <h6>場地租借</h6>
