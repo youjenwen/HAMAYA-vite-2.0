@@ -1,0 +1,68 @@
+/* line 1, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+#mfood-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 7, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.mfood-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.75rem;
+  position: relative;
+}
+
+/* line 15, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.mfood-landing-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12.5rem;
+  background-color: #7fd06a;
+  z-index: -1;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+
+/* line 26, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.mfoodLogoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 32, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.mfood__logo {
+  height: 24px;
+}
+
+/* line 36, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.header-title {
+  text-align: center;
+  line-height: 16px;
+}
+
+/* line 40, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.flex-1 {
+  flex: 1;
+}
+
+/* line 44, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 49, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.cartPoint {
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+
+/* line 55, ../../../../../resource/compass/_ui/mobile/common/css/mfood/header.scss */
+.relative {
+  position: relative;
+}
