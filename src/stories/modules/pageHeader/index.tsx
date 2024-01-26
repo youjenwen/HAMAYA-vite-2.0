@@ -13,7 +13,7 @@ const PageHeader = () => {
   return (
     <>
       <HeaderAntd className="sticky top-0 z-30 flex max-md:h-[90px] h-[130px] items-center justify-center gap-3 bg-primary-garyLight text-white shadow-2xl">
-        <Link to="/">
+        {/* <Link to="/">
           <Image preview={false} src={Logo} />
         </Link>
         <Menu />
@@ -46,7 +46,7 @@ const PageHeader = () => {
               svgProp={{ width: 25, height: 25 }}
             />
           }
-        />
+        /> */}
       </HeaderAntd>
     </>
   );
