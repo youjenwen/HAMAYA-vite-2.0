@@ -6,7 +6,7 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div className="bg-primary-garyLight">
-      {/* <VideoBanner /> */}
+      <VideoBanner />
       {/* TODO: 有一個 幻燈箱 */}
       {/* max:md 小於 768px有效果 md:大於768px有效果 */}
       <HomeService />

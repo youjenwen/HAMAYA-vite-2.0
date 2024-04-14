@@ -1,3 +1,4 @@
+import React from 'react';
 import { ConfigProvider } from 'antd';
 import { antdTheme } from '@Styles/config/ant-theme';
 import { Provider } from 'react-redux';

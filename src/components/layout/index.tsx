@@ -9,7 +9,7 @@ const Layout = () => {
     <AntdLayout>
       <PageHeader />
       <Outlet />
-      {/* <PageFooter /> */}
+      <PageFooter />
     </AntdLayout>
   );
 };
